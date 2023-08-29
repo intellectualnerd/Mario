@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 12.5px; /*12.5 is 100% of font size*/
+}
+#roller::-webkit-scrollbar {
+    display: none;
+  }
+body{
+    background-color: rgb(73, 148, 138)
+}
+button{
+    padding: 10px;
+    margin: 5px;
+    font-size: 1rem;
+}
+#Test_Audio{
+    padding-top: 30px;
+}
+#roller{
+    overflow:scroll;
+    height: 665px;
+    width: 809.2px;
+    border: 5px solid white;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+#screen{ 
+    height: 658px;
+    width: 10000px;
+    background-color: black;
+    padding: 0;
+    position: relative;
+}
+.outgamebox{
+    z-index: 10;
+    background-color: transparent;
+    height: 12.4px;
+    width:12.4px;
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid white ;*/
+    float: left;
+
+}
+#smallgame{
+    position: absolute;
+    top:0;
+}
+.gamebox{
+    height: 50px; /*12.5*4*/
+    width:50px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    background-color: bisque;
+}
+.blue{
+    background-color: rgb(93, 152, 152);
+}
+.green{
+    background-color: rgb(35, 150, 35);
+    border-top:3px solid black ;
+}
+.brown{
+    background-color: rgba(61, 25, 25, 0.766);
+    background-image: url('Screenshot\ 2023-04-04\ 163027.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.white{
+    background-color: rgb(181, 204, 223);
+}
+.gray{
+    background-color: rgb(82, 89, 94);
+    background-image: url('grayblock.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.gl{
+    background-image: url('greenleft.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.gr{
+    background-image: url('greenright.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.water{
+    background-color: rgb(43, 43, 239);
+}
+.red{
+    background-color: red;
+}
+.row {
+    display: block;
+}
+.box {
+    display: inline;
+}
+.sky {
+    background-color: skyblue;
+}
+.land {
+    background-color: bisque;
+}
+.wall {
+    background-color: maroon;
+}
+
+/*mario*/
+.marioskin{
+    background-color: rgb(140, 97, 44);
+}
+.marioshirt{
+    background-color: rgb(205, 74, 45);
+}
+.mariopants{
+    background-color: rgb(2, 0, 5);
+}
+.mariohead{
+    background-color: rgb(140, 97, 44);
+}
+@media screen and (max-width:800px) {
+    #roller{
+        transform: scale(0.4) translate(-0%);
+        margin-left: 0 !important;
+   
+    }
+
+}

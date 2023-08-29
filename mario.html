@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="mario.css" rel="stylesheet">
+</head>
+<body>
+    <button onclick="gameon()">ON</button>
+    
+    <div id="roller">
+        <div id="screen">   
+        </div>
+        <div id="smallgame">         
+        </div>
+    </div>
+    <button onclick="left()">left</button>
+    <button onclick="right()">right</button>
+    <button onclick="up()">up</button>
+    <button onclick="down()">down</button>
+    <script src="mario.js"></script>
+    <button onclick="Sound()">Sound</button>
+    <audio id="Test_Audio" controls loop>
+        <source src="mario_theme.mp3" 
+                type="audio/mpeg">
+    </audio>
+</body>
+</html>
